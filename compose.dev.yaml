@@ -98,7 +98,7 @@ services:
       - shared-config:/mnt/shared-config:ro
     environment:
       NODE_ENV: development
-      NODE_TLS_REJECT_UNAUTHORIZED: '0'
+      NODE_TLS_REJECT_UNAUTHORIZED: '1'
       DEBUG: ${DEBUG:-}
       pnpm_config_verify_deps_before_run: 'false'
       database__client: mysql2

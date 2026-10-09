@@ -32,8 +32,8 @@ module.exports = function adminController(req, res) {
     //   That doesn't work for admin templates because the filesize doesn't change between versions
     //   and `npm pack` sets a fixed lastmod date for every file meaning the default etag never changes
     const fileBuffer = fs.readFileSync(templatePath);
-    const hashSum = crypto.createHash('md5');
-    hashSum.update(fileBuffer);
+    const hashSum = crypto.createHash('sha256');
+    const hashSum = crypto.createHash('sha256').update(fileBuffer);
     headers.ETag = hashSum.digest('hex');
 
     if (config.get('adminFrameProtection')) {

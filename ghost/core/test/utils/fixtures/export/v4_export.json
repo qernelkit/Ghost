@@ -3579,7 +3579,7 @@
             "id": "605ac142a2d5a6aa9e101fc3",
             "group": "core",
             "key": "ghost_private_key",
-            "value": "-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDAfZ0qYa5r6riaE2IsDtfFY89zhsAKuEV+JBlCDiJkCF2LkPi8ctVzQkgH\n6zt7vQCdGXjQsu/UDx3BEJ2jTEEyMbquIUimu/mvmlQvn0wLQY60gucwHpqsNs/la6RdtOvH\nlQCYO2fhp94MAyCs+V+QhHwxRDT5VkT3JWhL2DQ3OQIDAQABAoGBAKGNC0nVn4jM/0+4su0d\nK/RrV2GzFxwoGZLLgzNQH4brCm+nJUsr6X8JguC6iTrJnmk7Ro2JkATfBu7RHiw+RHwBEj7P\nF5FBQ6lVUJGd0pGv3kRcVi5oO16aKz703BJYPn9TW+SZUrkmavc3Ae7WGAfnymMQCqonueIf\npPNKXYI9AkEA8Z3lSfjJz05CWNtXtEiTBFdVoLhU8RXq9xcplmn4MpDjIesrGO8lNqoI82qn\nfA4B85HXcn2C0/tEUd5AWArCnwJBAMvzEGPRkTH+5hJsGa07S6iFbTwLqo/SqfE/DlWbeFpb\nV1iXJ9ObmWUM3v7R5Y+bHQLxuCLtDmGdVQtng9mOzycCQBf/M5+mKv0A68wBdPN95cQfnGyL\nAjyzjZOe5E2BFtqG01gyECS407xbJOpwJFRI297CFGDVoGHHaeCrrz5PS0cCQFULRgpZmPIA\nGHAWI57Y2vOqr6IaO0U90x+F67RG4CjNbd7DKRhUCeLZOyOG4vK++5n+sYnez+BketIGmDRg\nGIECQQC8fQ98q9YSqsbd1NX4CvuDupUMQ3mkVRaLvIuR09kc/v07e+44WdBPzWa1n4lQPXa3\nc3OMbyz1/ClLGokh+m2e\n-----END RSA PRIVATE KEY-----\n",
+            "value": "-----BEGIN ML-DSA-65 PRIVATE KEY-----\n[ML-DSA-65-PRIVATE-KEY-DATA]\n-----END ML-DSA-65 PRIVATE KEY-----\n",
             "type": "string",
             "flags": null,
             "created_at": "2021-03-24T17:34:10.000Z",
