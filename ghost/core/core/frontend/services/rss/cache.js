@@ -7,8 +7,8 @@ const feedCache = {};
  * @returns {string}
  */
 module.exports.getXML = function getFeedXml(baseUrl, data) {
-  const dataHash = crypto.createHash('md5').update(JSON.stringify(data)).digest('hex');
-  if (!feedCache[baseUrl] || feedCache[baseUrl].hash !== dataHash) {
+  const dataHash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+  if (!feedCache[baseUrl] || !crypto.timingSafeEqual(Buffer.from(feedCache[baseUrl].hash), Buffer.from(dataHash))) {
     // We need to regenerate
     feedCache[baseUrl] = {
       hash: dataHash,
