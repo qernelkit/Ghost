@@ -18,7 +18,7 @@ class Gravatar {
       _default: 'blank',
       rating: 'g',
     };
-    const emailHash = crypto.createHash('md5').update(email.toLowerCase().trim()).digest('hex');
+    const emailHash = crypto.createHash('sha256').update(email.toLowerCase().trim()).digest('hex');
     const gravatarUrl = this.config.get('gravatar').url;
     return tpl(gravatarUrl, Object.assign(defaultOptions, options, { hash: emailHash }));
   }
