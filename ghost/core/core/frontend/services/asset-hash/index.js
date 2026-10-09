@@ -79,7 +79,7 @@ function getHashForFile(filePath) {
 function getGlobalHash() {
   if (!globalHash) {
     globalHash = crypto
-      .createHash('md5')
+      .createHash('sha256')
       .update(Date.now().toString())
       .digest('hex')
       .substring(0, GLOBAL_HASH_LENGTH);
